@@ -1,0 +1,497 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  height: 200vh;
+}
+
+/*Inicio Estilos barra de navegacion/header */
+
+.header {
+  background: #fff;
+  margin: 0;
+  font-size: 0;
+  display: block;
+  position: fixed;
+  top: 0;
+}
+
+
+.header > *, .nav-menu li {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 1.8rem;
+}
+
+.nav-menu {
+  margin: 0 1rem;
+  color: #025157;
+}
+
+.nav-menu a{
+  margin-right: 1.5rem;
+  text-decoration: none;
+  color: #025157;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #339ea5;
+}
+
+.logo-container {
+  width: 10%;
+  text-decoration: none;
+}
+
+.logo {
+  width: 100%;
+}
+
+nav {
+  width: 65%;
+  text-align: center;
+  padding-left: 18rem;
+}
+
+.action-container {
+  width: 25%;
+  text-align: right;
+  font-size: 1.8rem;
+}
+
+.action-container button {
+  color: white;
+  background-color: #67b54b;
+  padding: 9px 9px;
+  border: 0;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+/*Fin Estilos barra de navegacion/header */
+
+/* Estilos Home */
+.home {
+  text-align: center;
+}
+.home h1 {
+  margin-top: 18rem;
+  color: #025157;
+  font-size: 6rem;
+  margin-bottom: 2.4rem;
+}
+.home p {
+  color: #8b8b8bcc;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2rem;
+}
+.home form input{
+  border: 1px solid #b6b6b6;
+  padding: 1.5rem 2rem;
+  width: 20rem;
+  max-width: 20rem;
+  border-radius: 8px;
+  font-size: 1.5rem;
+}
+.home button {
+  color: #fff;
+  background-color: #025157;
+  border: none;
+  border-radius: 8px;
+  padding: 1.5rem 2rem;
+  font-size: 1.5rem;
+}
+
+.home img {
+  width: 50%;
+}
+
+/*Inicio Estilos bloque de publicidad*/
+.publicidad {
+  margin: 15rem auto 0 auto;
+  width: 70%;
+  display: flex;
+  align-items: center;
+}
+
+.videopub {
+  margin-right: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: -1;
+}
+
+.videopub img {
+  width: 5rem;
+  margin-top: 10px;
+}
+
+.promo h1 {
+  font-size: 3rem;
+  margin-top: 0;
+}
+
+.promo p {
+  font-size: 1.6rem;
+  color: #025157;
+  font-weight: 500;
+}
+
+.promo .regalo {
+  font-weight: 600;
+}
+
+.promo input, .promo button {
+  padding: 1rem 0.5rem;
+  font-size: 1.4rem;
+  border-radius: 0.5rem;
+  border: 0;
+}
+
+.promo input {
+  border: 1px solid gray;
+}
+
+.promo button {
+  background: rgb(190, 73, 73);
+  color: white;
+}
+/*Final Estilos bloque de publicidad*/
+
+/*Inicio Estilos Growing*/
+.growing {
+  margin-top: 10rem;
+  display: flex;
+  justify-content: center;
+  background: #a1d683;
+  padding: 3rem 0;
+}
+
+.growdesc {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  margin-right: 3rem;
+}
+
+.encabezados-2 {
+  font-size: 4rem;
+  margin-top: 0;
+}
+
+.p-normal {
+  font-size: 1.6rem;
+  color: #025157;
+  font-weight: 500;
+}
+
+.boton-principal {
+  width: 15rem;
+  background: #025157;
+  color: white;
+  padding: 1rem 0.5rem;
+  border-radius: 5px;
+  border: 0;
+  margin-bottom: 3rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.growdesc img {
+  width: 80%;
+  border-radius: 1rem;
+  align-self: center;
+}
+
+.cliente {
+  margin-left: 3rem;
+  width: 20%;
+  background: #fff;
+  padding: 2rem;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+
+.cliente img{
+  width: 100%;
+  border-radius: 10px;
+}
+
+.cliente h2 {
+  color: #025157;
+  font-size: 2.2rem;
+}
+
+.cliente h3 {
+  color: #025157;
+  font-size: 1.6rem;
+}
+
+.cliente button {
+  background: #025157;
+  color: white;
+  padding: 1rem 0.5rem;
+  border-radius: 5px;
+  border: 0;
+  font-size: 1.3rem;
+  font-weight: bold;
+  width: 100%;
+}
+
+ /*Final Growing*/
+
+  /*Inicio features GRID 2X2*/
+  .features {
+    display: grid;
+    grid-template: repeat(2, 30rem) / repeat(2, 1fr);
+    padding: 5rem 10rem;
+    background: #025157;
+  }
+
+  .features .feature-card {
+    margin: 0 15px 30px 15px;
+    background: #fff;
+    border: 1px solid #dadada;
+    border-radius: 5px;
+    display: flex;
+  }
+
+  .feature-card .feature-description {
+    width: 65%;
+    margin-top: 1rem;
+    padding-left: 2rem;
+  }
+
+  .feature-description .icon {
+    background: #524f4f;
+  }
+
+  .feature-image {
+    margin-top: 4rem;
+    width: 218px;
+    height: 200px;
+  }
+
+  .feature-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .feature-card h3, .how-work-card h3 {
+    font-size: 2.4rem;
+    color: #343434;
+  }
+
+  .feature-card p, .how-work-card p {
+    font-size: 1.6rem;
+    color: #7e7e7e;
+    font-weight: 450;
+  }
+
+  .feature-card a, .how-work-card a {
+    font-size: 1.6rem;
+    color: #67b54b;
+    font-weight: 550;
+    text-decoration: none;
+  }
+
+  /* Estilos how works? */
+
+  .how-work {
+    margin-top: 0;
+    background: #a1d683;
+    padding: 3rem 15rem;
+  }
+
+  .how-work .how-work-description {
+    text-align: center;
+  }
+
+  .how-work .how-work-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+
+  .how-work-grid .how-work-card {
+    border: 1px solid #777575;
+    background: #fff;
+    border-radius: 5px;
+    padding: 0 1rem 2rem 1rem;
+  }
+
+  .how-work-card h3{
+    text-align: center;
+  }
+
+  .how-work-card img {
+    width: 100%;
+  }
+
+@media screen and (max-width: 1149px) {
+  /*Inicio Estilos barra de navegacion/header */
+  .header {
+    position: static;
+  }
+
+  .header > *, .nav-menu li {
+    display: block;
+  }
+  
+  .logo-container {
+    width: 15%;
+    margin: 0 auto;
+  }
+
+  nav {
+    padding: 0;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+  }
+
+  .nav-menu {
+    padding: 0;
+    padding-left: 1rem;
+  }
+
+  .nav-menu li {
+    padding-bottom: 1rem;
+  }
+
+  .action-container {
+    margin: 0 auto;
+    text-align: center;
+    padding-right: 0.5rem;
+    margin-top: 1.7rem;
+  }
+  /*Final Estilos barra de navegacion/header */
+
+  
+  
+  .publicidad {
+    margin: 5rem auto 0 auto;
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .videopub {
+    margin-right: 0;
+  }
+
+  .videopub, .videopub video {
+    width: 100%;
+  }
+
+  
+
+  /*EStilos Growing*/
+  .growing {
+    flex-direction: column;
+    align-items: center;
+  } 
+
+  .growdesc {
+    width: 70%;
+    margin-right: 0;
+  }
+  
+  .cliente {
+    margin-top: 7rem;
+    margin-left: 0rem;
+    width: 90%;
+    display: flex;
+  }
+
+  .cliente-imagen {
+    width: 80%;
+    margin-right: 3rem;
+  }
+
+  .cliente-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 10rem;
+  }
+  
+  .cliente-description h2 {
+    font-size: 3.2rem;
+  }
+  
+  .cliente-description h3 {
+    font-size: 2.4rem;
+  }
+
+  .cliente-description p {
+    font-size: 1.5rem;
+  }
+
+  .cliente-description button {
+    font-size: 2rem;
+    width: 70%;
+    align-self: center;
+  }
+
+
+  /*Estilos features GRID*/
+  .features {
+    grid-template: none;
+    padding: 5rem 5rem;
+  }
+
+  /*Estilos how works grid*/
+  .how-work .how-work-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 890px) {
+  .cliente {
+    flex-direction: column;
+  }
+  .cliente-imagen {
+    align-self: center;
+    margin-right: 0;
+  }
+  .cliente-description {
+    margin-bottom: 1rem;
+  }
+
+}
+
+@media screen and (max-width: 720px) {
+  .home h1 {
+    margin-top: 5rem;
+    font-size: 4rem;
+  }
+  .features {
+    grid-template-columns: 1fr;
+    padding: 5rem 0rem
+  }
+
+  .feature-card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature-card .feature-description {
+    width: 85%;
+  }
+
+  .how-work {
+    padding: 3rem 2rem
+  }
+  .how-work .how-work-grid {
+    grid-template-columns: 1fr;
+  }
+}
