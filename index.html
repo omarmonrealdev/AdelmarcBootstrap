@@ -13,15 +13,21 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=optional"
       rel="stylesheet"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
     <title>Adelmarc</title>
   </head>
   <body>
-      <header class="header">
-        <!-- logo con link a inicio -->
+    <!-- <header class="header">
+        
         <a class="logo-container" href="/">
           <img class="logo" src="images/icono.jpeg" alt="logotipo adelmarc" />
         </a>
-        <!-- barra de navegacion -->
+        
         <nav>
           <ul class="nav-menu">
             <li><a href="#">Que es Adelmarc</a></li>
@@ -30,26 +36,68 @@
             <li><a href="#">Contacto</a></li>
           </ul>
         </nav>
-        <!-- contenedor de acciones de usuario -->
+        
         <div class="action-container">
           <button>Suscribete</button>
         </div>
-      </header>
+      </header> -->
 
-      <main class="home">
-        <h1>Adelmarc, para todo tipo de piel</h1>
-        <p>Dejate consentir por la elegancia y naturalidad que los productos Adelmarc tienen preparados para tu piel, nada volvera a ser igual...</p>
+    <!-- Navbar de bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand logo-container" href="#">
+          <img class="logo" src="images/icono.jpeg" alt="" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Nuestra historia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pricing.html">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contacto</a>
+            </li>
+          </ul>
+          <div class="action-container justify-content-end">
+            <button>Suscribete</button>
+          </div>
+        </div>
+      </div>
+    </nav>
 
-        <form>
-          <input type="email" placeholder="Deja tu email">
-          <button type="submit">Recibir Noticias &rarr;</button>
-        </form>
+    <main class="home">
+      <h1>Adelmarc, para todo tipo de piel</h1>
+      <p>
+        Dejate consentir por la elegancia y naturalidad que los productos
+        Adelmarc tienen preparados para tu piel, nada volvera a ser igual...
+      </p>
 
-        <p>En tus manos esta <strong>El futuro de tu piel</strong></p>
-        <p><strong>Resultado garantizados</strong> sin engaños</p>
+      <form>
+        <input type="email" placeholder="Deja tu email" />
+        <button type="submit">Recibir Noticias &rarr;</button>
+      </form>
 
-        <img src="images/icono.jpeg" alt="logo Adelmarc">
-      </main>
+      <p>En tus manos esta <strong>El futuro de tu piel</strong></p>
+      <p><strong>Resultado garantizados</strong> sin engaños</p>
+
+      <img src="images/icono.jpeg" alt="logo Adelmarc" />
+    </main>
 
     <section class="publicidad">
       <article class="videopub">
@@ -85,7 +133,9 @@
 
     <section class="growing">
       <article class="growdesc">
-        <h1 class="encabezados-2">Growing ecommerce brands rely on Adelmarc.</h1>
+        <h1 class="encabezados-2">
+          Growing ecommerce brands rely on Adelmarc.
+        </h1>
         <p class="p-normal">
           Are you tired of wasting time publishing blog articles to only see a
           trickle of traffic and no impact on sales? Join hundreds of business
@@ -95,88 +145,154 @@
         <button class="boton-principal">Quien usa Adelmarc</button>
         <img src="images/marcas.png" alt="marcas adelmarc" />
       </article>
-      <article class="cliente">
-        <div class="cliente-imagen"><img src="images/cliente.png" alt="cliente comprando" /></div>
+            
+      <!-- <article class="cliente">
+        <div class="cliente-imagen">
+          <img src="images/cliente.png" alt="cliente comprando" />
+        </div>
         <div class="cliente-description">
           <h2>Vanessa Grimes</h2>
-          <h3>Clienta satisfecha: He usado los jabones Adelmarc con magnificos resultados.</h3>
+          <h3>
+            Clienta satisfecha: He usado los jabones Adelmarc con magnificos
+            resultados.
+          </h3>
           <p>30% de descuento en tu primera compra</p>
           <button>Agregar al carrito</button>
         </div>
+      </article> -->
+
+      <article class="stories-carousel">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              
+              <article class="cliente">
+                <div class="cliente-imagen">
+                  <img src="images/cliente.png" alt="cliente comprando" />
+                </div>
+                <div class="cliente-description">
+                  <h2>Vanessa Grimes</h2>
+                  <h3>
+                    Clienta satisfecha: He usado los jabones Adelmarc con magnificos
+                    resultados.
+                  </h3>
+                  <p>30% de descuento en tu primera compra</p>
+                  <button>Agregar al carrito</button>
+                </div>
+              </article>
+
+            </div>
+
+            <div class="carousel-item">
+              <article class="cliente">
+                <div class="cliente-imagen">
+                  <img src="images/cliente.png" alt="cliente comprando" />
+                </div>
+                <div class="cliente-description">
+                  <h2>Vanessa Grimes</h2>
+                  <h3>
+                    Clienta satisfecha: He usado los jabones Adelmarc con magnificos
+                    resultados.
+                  </h3>
+                  <p>30% de descuento en tu primera compra</p>
+                  <button>Agregar al carrito</button>
+                </div>
+              </article>
+            </div>
+
+            <div class="carousel-item">
+              <article class="cliente">
+                <div class="cliente-imagen">
+                  <img src="images/cliente.png" alt="cliente comprando" />
+                </div>
+                <div class="cliente-description">
+                  <h2>Vanessa Grimes</h2>
+                  <h3>
+                    Clienta satisfecha: He usado los jabones Adelmarc con magnificos
+                    resultados.
+                  </h3>
+                  <p>30% de descuento en tu primera compra</p>
+                  <button>Agregar al carrito</button>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
       </article>
+
     </section>
 
     <section class="features">
       <article class="feature-card">
         <div class="feature-description">
-          
-          <img class="icon" src="images/arrow.svg" alt="icono flecha">
-  
+          <img class="icon" src="images/arrow.svg" alt="icono flecha" />
+
           <h3>Jabon de Avena</h3>
           <p>
-            Preveniene las arrugas, los daños del sol y mejoran la tez de la piel.
+            Preveniene las arrugas, los daños del sol y mejoran la tez de la
+            piel.
           </p>
           <a href="#">Mas informacion...</a>
         </div>
-        
-        <figure class="feature-image">
-          <img src="images/avena.jpeg" alt="jabon de almendra">
-        </figure>
 
+        <figure class="feature-image">
+          <img src="images/avena.jpeg" alt="jabon de almendra" />
+        </figure>
       </article>
-      
+
       <article class="feature-card">
         <div class="feature-description">
-          
-          <img class="icon" src="images/code.svg" alt="icono code">
-  
+          <img class="icon" src="images/code.svg" alt="icono code" />
+
           <h3>Jabon de Almendra</h3>
           <p>
-            Preveniene alergias y la resequedad aportando antioxidantes escenciales.
+            Preveniene alergias y la resequedad aportando antioxidantes
+            escenciales.
           </p>
           <a href="#">Mas informacion...</a>
         </div>
-        
-        <figure class="feature-image">
-          <img src="images/almendra.jpeg" alt="jabon de almendra">
-        </figure>
 
+        <figure class="feature-image">
+          <img src="images/almendra.jpeg" alt="jabon de almendra" />
+        </figure>
       </article>
 
       <article class="feature-card">
         <div class="feature-description">
-          
-          <img class="icon" src="images/paint.svg" alt="icono paint">
-  
+          <img class="icon" src="images/paint.svg" alt="icono paint" />
+
           <h3>Jabon de Cafe</h3>
           <p>
-            Sus propiedades protegen la epidermis contra los abusos del exterior.
+            Sus propiedades protegen la epidermis contra los abusos del
+            exterior.
           </p>
           <a href="#">Mas informacion...</a>
         </div>
-        
-        <figure class="feature-image">
-          <img src="images/cafe.jpeg" alt="jabon de cafe">
-        </figure>
 
+        <figure class="feature-image">
+          <img src="images/cafe.jpeg" alt="jabon de cafe" />
+        </figure>
       </article>
 
       <article class="feature-card">
         <div class="feature-description">
-          
-          <img class="icon" src="images/shapes.svg" alt="icono formas">
-  
+          <img class="icon" src="images/shapes.svg" alt="icono formas" />
+
           <h3>Jabon de Naranja</h3>
           <p>
             Antienvejesimiento, ayudando a nuestro cuerpo a producir colágeno.
           </p>
           <a href="#">Mas informacion...</a>
         </div>
-        
-        <figure class="feature-image">
-          <img src="images/naranja2.jpeg" alt="jabon de naranja">
-        </figure>
 
+        <figure class="feature-image">
+          <img src="images/naranja2.jpeg" alt="jabon de naranja" />
+        </figure>
       </article>
     </section>
 
@@ -184,37 +300,15 @@
       <div class="how-work-description">
         <h2 class="encabezados-2">Mandanos un Whatsapp</h2>
         <p class="p-normal">
-          Nuestro equipo de expertos esta listo para cualquier consulta sobre nuestros productos, chatea con nosotros.
+          Nuestro equipo de expertos esta listo para cualquier consulta sobre
+          nuestros productos, chatea con nosotros.
         </p>
-        <button class="boton-principal">Abrir Whatsapp</button>          
+        <button class="boton-principal">Abrir Whatsapp</button>
       </div>
       <div class="how-work-grid">
         <article class="how-work-card">
           <figure>
-            <img src="images/verde.jpeg" alt="jabon verde">
-          </figure>
-          <h3>Jabon de Naranja</h3>
-          <p>
-            Antienvejesimiento, ayudando a nuestro cuerpo a producir colágeno.
-          </p>
-          <a href="#">Mas informacion...</a>
-        
-        </article>
-
-        <article class="how-work-card">
-          <figure>
-            <img src="images/verde.jpeg" alt="jabon verde">
-          </figure>
-          <h3>Jabon de Naranja</h3>
-          <p>
-            Antienvejesimiento, ayudando a nuestro cuerpo a producir colágeno.
-          </p>
-          <a href="#">Mas informacion...</a>
-        </article>
-        
-        <article class="how-work-card">
-          <figure>
-            <img src="images/verde.jpeg" alt="jabon verde">
+            <img src="images/verde.jpeg" alt="jabon verde" />
           </figure>
           <h3>Jabon de Naranja</h3>
           <p>
@@ -225,7 +319,29 @@
 
         <article class="how-work-card">
           <figure>
-            <img src="images/verde.jpeg" alt="jabon verde">
+            <img src="images/verde.jpeg" alt="jabon verde" />
+          </figure>
+          <h3>Jabon de Naranja</h3>
+          <p>
+            Antienvejesimiento, ayudando a nuestro cuerpo a producir colágeno.
+          </p>
+          <a href="#">Mas informacion...</a>
+        </article>
+
+        <article class="how-work-card">
+          <figure>
+            <img src="images/verde.jpeg" alt="jabon verde" />
+          </figure>
+          <h3>Jabon de Naranja</h3>
+          <p>
+            Antienvejesimiento, ayudando a nuestro cuerpo a producir colágeno.
+          </p>
+          <a href="#">Mas informacion...</a>
+        </article>
+
+        <article class="how-work-card">
+          <figure>
+            <img src="images/verde.jpeg" alt="jabon verde" />
           </figure>
           <h3>Jabon de Naranja</h3>
           <p>
@@ -236,5 +352,10 @@
       </div>
     </section>
 
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
